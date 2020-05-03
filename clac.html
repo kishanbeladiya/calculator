@@ -1,0 +1,70 @@
+<html>
+   <head>
+   <title>Calculator</title>
+   </head>
+   <body>
+   <style>
+   #display{
+   height:50px;
+   width:250px;
+   background-color:white;
+   border:0.1px solid rgba(0,0,0,0.2);;
+   box-shadow:1px 3px 5px rgba(0,0,0,0.2);
+   }
+   #outline{
+	height:410px;
+	width:260px;
+	border:0.1px solid rgba(0,0,0,0.2);
+   }
+   input{
+   height:70px;
+   width:55px;
+   box-shadow:1px 3px 5px rgba(0,0,0,0.2);
+   margin:2px;
+   }
+   #converter{
+	height:25px;
+	width:97.5%;
+	transition:0.7s ease-in-out;
+   }
+   <script>
+   </script>
+   </style>
+   <div id="outline">
+         <table>
+            <tr>
+               <td colspan="4">
+                  <input style="font-weight:bold;font-size:30px" type="text" name="display" id="display" placeholder="" disabled>
+               </td>
+            </tr>
+			<tr>
+				<td colspan="4"><a href="https://iitian360.blogspot.com/" target="blank"><input style="background-color:rgba(0,0,0,0.7);color:white" id="converter" type="button" name="converter" value="Converter" onclick=""></a></td>
+			</tr>
+            <tr>
+               <td><input type="button" name="one" value="1" onclick="display.value += '1'"></td>
+               <td><input type="button" name="two" value="2" onclick="display.value += '2'"></td>
+               <td><input type="button" name="three" value="3" onclick="display.value += '3'"></td>
+               <td><input type="button" class="operator" name="plus" value="+" onclick="display.value += '+'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="four" value="4" onclick="display.value += '4'"></td>
+               <td><input type="button" name="five" value="5" onclick="display.value += '5'"></td>
+               <td><input type="button" name="six" value="6" onclick="display.value += '6'"></td>
+               <td><input type="button" class="operator" name="minus" value="-" onclick="display.value += '-'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="seven" value="7" onclick="display.value += '7'"></td>
+               <td><input type="button" name="eight" value="8" onclick="display.value += '8'"></td>
+               <td><input type="button" name="nine" value="9" onclick="display.value += '9'"></td>
+               <td><input type="button" class="operator" name="times" value="x" onclick="display.value += '*'"></td>
+            </tr>
+            <tr>
+               <td><input style="background-color:rgba(256,0,0,0.7)" type="button" id="clear" name="clear" value="c" onclick="display.value = ''"></td>
+               <td><input type="button" name="zero" value="0" onclick="display.value += '0'"></td>
+               <td><input type="button" name="doit" value="=" onclick="display.value = eval(display.value)"></td>
+               <td><input type="button" class="operator" name="div" value="/" onclick="display.value += '/'"></td>
+            </tr>
+         </table>
+	  </div>
+   </body>
+</html>
